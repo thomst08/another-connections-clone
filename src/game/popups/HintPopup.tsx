@@ -14,11 +14,11 @@ function HintComponent(props: { data: IHintInfo }) {
 
     return (
         <div>
-            <div role="button" onClick={onClick}>
-                <p className="flex underline items-center content-center">
+            <div role="button" className="cursor-pointer hover:text-gray-500"  onClick={onClick}>
+                <div className="flex underline items-center content-center">
                     <div className={className} style={styles} />
                     {props.data.groupName}
-                </p>
+                </div>
             </div>
             <div>
                 <p className="font-bold">{hintWord}</p>

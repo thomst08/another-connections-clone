@@ -74,6 +74,7 @@ body {
 
 .completeHeading {
   font-weight: 700;
+  text-align: center;
 }
 
 .completeWord {
@@ -99,6 +100,10 @@ body {
 
   @media (max-width: 639px) {
     font-size: 16px;
+  }
+
+  & ol {
+    text-align: center;
   }
 
   &.--easy {
@@ -362,6 +367,10 @@ body {
 
   min-width: 7.5em;
 
+  @media (max-width: 639px) {
+    width: 100%;
+  }
+
   &:disabled {
     background-color: var(--bg-page);
     color: var(--text-tertiary);
@@ -379,7 +388,8 @@ body {
 
   @media (max-width: 639px) {
     display: flex;
-    flex-direction: column-reverse;;
+    flex-direction: column-reverse;
+    ;
     align-content: center;
     align-items: center;
   }
@@ -506,6 +516,8 @@ body {
 
 
   & .menu-button {
+    cursor: pointer;
+
     min-width: 11.85em;
     min-width: min(11.85em, 180px);
     letter-spacing: 0;
@@ -616,12 +628,12 @@ body {
 
 
 .toolbar-button-section {
+
   background: none;
   color: inherit;
   border: none;
   padding: 0;
   font: inherit;
-  cursor: pointer;
   outline: inherit;
   height: 100%;
   display: flex;
@@ -633,6 +645,8 @@ body {
 
 
 .toolbar-button {
+
+  cursor: pointer;
   font-size: 16px;
   padding: 0 8px;
   border: none;
