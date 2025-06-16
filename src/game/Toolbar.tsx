@@ -69,16 +69,6 @@ export function Toolbar(props: IToolbarProps) {
     }, [helpOpen]);
 
 
-    const popupWindow = useMemo(() => {
-        if (!hintOpen)
-            return null;
-
-        return (
-            <div></div>
-        );
-    }, [hintOpen]);
-
-
     return (
         <>
             <HintPopup data={props.apiData} closePopup={closeHintPopup} openPopup={hintOpen} showSecondHints={props.showExtraHints} />
@@ -116,7 +106,6 @@ export function Toolbar(props: IToolbarProps) {
                     </div>
                 </div>
             </div>
-            {popupWindow}
         </>
     );
 }
