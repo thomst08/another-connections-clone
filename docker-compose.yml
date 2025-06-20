@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  another-connections-clone:
+    image: thomst08/another-connections-clone
+    container_name: another-connection-clone
+    ports:
+    - 5173:5173
+    restart: unless-stopped
